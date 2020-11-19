@@ -12,10 +12,12 @@ void setup() {
 }
 
 void loop() {
+  delay(100);
   buttonState = digitalRead(buttonPin);
   potControllerInput = analogRead(potControllerPin);
-  potControllerValue = map(potControllerInput, 0, 1023, 0, 800); 
+  potControllerValue = map(potControllerInput, 0, 1023, 25, 775); 
 
-  Serial.println(buttonState);
+  Serial.print(buttonState); 
+  Serial.print(",");
   Serial.println(potControllerValue);
 }
