@@ -7,6 +7,14 @@ class Player extends Entity{
   
   void Update(int input){
       xPos = input;
+      //if(xPos >= width){
+      //   xPos = width; 
+      //    println("update");
+      //}
+      //if(xPos < 0){
+      //   xPos = 0; 
+      //}
+      
       int leftCornerX = xPos - (entityWidth/2);
       int leftCornerY = yPos + (entityWidth/2);
       int topX = xPos;
@@ -16,7 +24,6 @@ class Player extends Entity{
       fill(r,g,b);
       triangle(leftCornerX, leftCornerY, topX, topY, rightCornerX, rightCornerY);
       noFill();
-      //ellipse(xPos, yPos, pWidth/2, pWidth/2);
   }
   
 }

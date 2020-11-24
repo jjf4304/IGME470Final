@@ -25,20 +25,4 @@ class Bullet extends Entity{
     }
   }
   
-  /*
-  boolean checkCollision(Asteroid asteroid){
-     int collisionRadius = asteroid.getWidth()/2 + getWidth()/2;
-     collisionRadius *= collisionRadius;
-     
-     float distance = pow(asteroid.getXPos() - xPos, 2) + pow(asteroid.getYPos() - yPos, 2);
-     
-     if(collisionRadius >= distance){
-        asteroid.collide();
-        collide();
-        return true;
-     }
-     else
-       return false;
-  }
-  */
 }
